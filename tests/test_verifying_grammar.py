@@ -14,7 +14,7 @@ def test_given_invalid_sentence_type_output_error():
     assert error_message == "Error: invalid sentence"
 
 def test_given_sentence_with_correct_grammar_output_true():
-    is_grammar_correct = verifying_grammar_of_text("Hey, over here!")
+    is_grammar_correct = verifying_grammar_of_text("Hey, over here?")
     assert is_grammar_correct == True
     
 def test_given_sentence_with_no_punctuation_mark_output_false():

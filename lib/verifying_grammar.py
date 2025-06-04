@@ -3,4 +3,4 @@ def verifying_grammar_of_text(string):
         raise Exception("Error: invalid sentence")
     elif len(string) == 0:
         raise Exception("Error: empty sentence")
-    return string[0].isupper() and string[-1] == '!'
+    return string[0].isupper() and string[-1] in ".?!"
